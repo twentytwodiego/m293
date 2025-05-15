@@ -2,7 +2,7 @@
 ## Übung 1
 ### Erste Website (ohne Leerzeilen)
 
-```
+```html
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -18,12 +18,12 @@
 </html>
 ```
 
-Sie zeigt das an: 
+Sie zeigt das an:  
 ![ParagraphenOhneAbstaende](../Bilder/ParagraphenOhneAbstaende.png)
 
 ### Zweite Website (mit Leerzeilen)
 
-```
+```html 
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -43,7 +43,7 @@ Sie zeigt das an:
 </body>
 </html>
 ```
-Sie zeigt das an:
+Sie zeigt das an:  
 ![ParagraphenMitAbstaende](../Bilder/ParagraphenMitAbstaende.png)
 
 ### Was ist passiert?
