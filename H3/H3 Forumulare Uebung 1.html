@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiele-Umfrage (Ohne CSS)</title>
+</head>
+<body>
+    <form method="get" action="">
+        <h1>Spiele-Umfrage</h1>
+
+        <fieldset>
+            <legend><h2>a) Welches ist Ihr aktuelles Lieblingsspiel (Computerspiele)?</h2></legend>
+            <p>(Bitte wählen Sie nur eine Option aus)</p>
+            <div>
+                <input type="radio" id="lieblingsspiel_eldring" name="lieblingsspiel" value="Elden Ring">
+                <label for="lieblingsspiel_eldring">Elden Ring</label>
+            </div>
+            <div>
+                <input type="radio" id="lieblingsspiel_cyberpunk" name="lieblingsspiel" value="Cyberpunk 2077">
+                <label for="lieblingsspiel_cyberpunk">Cyberpunk 2077</label>
+            </div>
+            <div>
+                <input type="radio" id="lieblingsspiel_zelda" name="lieblingsspiel" value="The Legend of Zelda: Tears of the Kingdom">
+                <label for="lieblingsspiel_zelda">The Legend of Zelda: Breath of the Wild</label>
+            </div>
+            <div>
+                <input type="radio" id="lieblingsspiel_valorant" name="lieblingsspiel" value="Valorant">
+                <label for="lieblingsspiel_valorant">Valorant</label>
+            </div>
+            <div>
+                <input type="radio" id="lieblingsspiel_hogwarts" name="lieblingsspiel" value="Hogwarts Legacy">
+                <label for="lieblingsspiel_hogwarts">Hogwarts Legacy</label>
+            </div>
+            <div>
+                <input type="radio" id="lieblingsspiel_stardew" name="lieblingsspiel" value="Stardew Valley">
+                <label for="lieblingsspiel_stardew">Stardew Valley</label>
+            </div>
+            <div>
+                <input type="radio" id="lieblingsspiel_baldurs" name="lieblingsspiel" value="Baldur's Gate 3">
+                <label for="lieblingsspiel_baldurs">Baldur's Gate 3</label>
+            </div>
+            <div>
+                <input type="radio" id="lieblingsspiel_fortnite" name="lieblingsspiel" value="Fortnite">
+                <label for="lieblingsspiel_fortnite">Fortnite</label>
+            </div>
+            <div>
+                <input type="radio" id="lieblingsspiel_apex" name="lieblingsspiel" value="Apex Legends">
+                <label for="lieblingsspiel_apex">Apex Legends</label>
+            </div>
+            <div>
+                <input type="radio" id="lieblingsspiel_minecraft" name="lieblingsspiel" value="Minecraft">
+                <label for="lieblingsspiel_minecraft">Minecraft</label>
+            </div>
+
+            <div>
+                <input type="radio" id="lieblingsspiel_keine" name="lieblingsspiel" value="Ich spiele keine Computerspiele">
+                <label for="lieblingsspiel_keine">Ich spiele keine Computerspiele</label>
+            </div>
+            <div>
+                <input type="radio" id="lieblingsspiel_andere" name="lieblingsspiel" value="Andere">
+                <label for="lieblingsspiel_andere">Andere:</label>
+                <input type="text" id="lieblingsspiel_andere_text" name="lieblingsspiel_andere_text" placeholder="Bitte hier eintragen">
+            </div>
+        </fieldset>
+
+        <br>
+        <hr>
+        <br>
+
+        <fieldset>
+            <legend><h2>b) Welche der folgenden Spiele spielen Sie regelmässig?</h2></legend>
+            <p>(Sie können mehrere Optionen auswählen)</p>
+            <div>
+                <input type="checkbox" id="regelmaessig_cs2" name="regelmaessig_spiele[]" value="Counter-Strike 2">
+                <label for="regelmaessig_cs2">Counter-Strike 2</label>
+            </div>
+            <div>
+                <input type="checkbox" id="regelmaessig_lol" name="regelmaessig_spiele[]" value="League of Legends">
+                <label for="regelmaessig_lol">League of Legends</label>
+            </div>
+            <div>
+                <input type="checkbox" id="regelmaessig_overwatch" name="regelmaessig_overwatch" value="Overwatch 2">
+                <label for="regelmaessig_overwatch">Overwatch 2</label>
+            </div>
+            <div>
+                <input type="checkbox" id="regelmaessig_gta" name="regelmaessig_gta" value="Grand Theft Auto V">
+                <label for="regelmaessig_gta">Grand Theft Auto V</label>
+            </div>
+            <div>
+                <input type="checkbox" id="regelmaessig_rdr2" name="regelmaessig_rdr2" value="Red Dead Redemption 2">
+                <label for="regelmaessig_rdr2">Red Dead Redemption 2</label>
+            </div>
+            <div>
+                <input type="checkbox" id="regelmaessig_witcher" name="regelmaessig_witcher" value="The Witcher 3: Wild Hunt">
+                <label for="regelmaessig_witcher">The Witcher 3: Wild Hunt</label>
+            </div>
+            <div>
+                <input type="checkbox" id="regelmaessig_destiny" name="regelmaessig_destiny" value="Destiny 2">
+                <label for="regelmaessig_destiny">Destiny 2</label>
+            </div>
+            <div>
+                <input type="checkbox" id="regelmaessig_farcry" name="regelmaessig_farcry" value="Far Cry 6">
+                <label for="regelmaessig_farcry">Far Cry 6</label>
+            </div>
+            <div>
+                <input type="checkbox" id="regelmaessig_diablo" name="regelmaessig_diablo" value="Diablo IV">
+                <label for="regelmaessig_diablo">Diablo IV</label>
+            </div>
+            <div>
+                <input type="checkbox" id="regelmaessig_genshin" name="regelmaessig_genshin" value="Genshin Impact">
+                <label for="regelmaessig_genshin">Genshin Impact</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="regelmaessig_keine" name="regelmaessig_spiele[]" value="Ich spiele keine Computerspiele regelmässig">
+                <label for="regelmaessig_keine">Ich spiele keine Computerspiele regelmässig</label>
+            </div>
+            <div>
+                <input type="checkbox" id="regelmaessig_andere" name="regelmaessig_spiele_andere_aktiv" value="true">
+                <label for="regelmaessig_andere">Andere:</label>
+                <input type="text" id="regelmaessig_andere_text" name="regelmaessig_spiele_andere_text" placeholder="Bitte hier eintragen (durch Komma trennen)">
+            </div>
+        </fieldset>
+
+        <br>
+        <button type="submit">Umfrage absenden</button>
+
+    </form>
+</body>
+</html>
