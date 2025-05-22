@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bild hochladen (Ohne CSS)</title>
+</head>
+<body>
+    <h1>Bild hochladen</h1>
+
+    <form action="upload-dummy.php" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="bild_datei">Bilddatei auswählen:</label>
+            <input type="file" id="bild_datei" name="bild_datei" accept="image/*">
+            <p>Nur Bildformate (JPG, PNG, GIF, SVG, etc.) sind erlaubt.</p>
+        </div>
+
+        <p></p> <div>
+            <label for="bild_titel">Bildtitel (optional):</label>
+            <input type="text" id="bild_titel" name="bild_titel" placeholder="Geben Sie einen Titel für das Bild ein">
+        </div>
+
+        <p></p> <button type="submit">Bild hochladen</button>
+
+        <hr>
+
+    </form>
+</body>
+</html>
