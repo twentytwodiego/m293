@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Modul 293 – Webauftritt erstellen und veröffentlichen test</h1>
+        <h1>Modul 293 – Webauftritt erstellen und veröffentlichen</h1>
         
         <?php
         $directories = ['H1', 'D1', 'T1'];
