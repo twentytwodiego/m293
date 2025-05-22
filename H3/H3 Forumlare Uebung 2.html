@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demografische Datenerhebung (Ohne CSS und BR)</title>
+</head>
+<body>
+    <form method="get" action="">
+        <h1>Demografische Datenerhebung</h1>
+
+        <fieldset>
+            <legend><h2>Persönliche Informationen</h2></legend>
+
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Ihr Name">
+            </div>
+
+            <div>
+                <label for="alter">Alter:</label>
+                <input type="number" id="alter" name="alter" min="18" max="120" placeholder="Ihr Alter">
+            </div>
+
+            <div>
+                <label>Geschlecht:</label>
+                <div>
+                    <input type="radio" id="geschlecht_m" name="geschlecht" value="männlich">
+                    <label for="geschlecht_m">Männlich</label>
+                </div>
+                <div>
+                    <input type="radio" id="geschlecht_w" name="geschlecht" value="weiblich">
+                    <label for="geschlecht_w">Weiblich</label>
+                </div>
+            </div>
+        </fieldset>
+
+        <hr>
+
+        <fieldset>
+            <legend><h2>Geografische und Berufsdaten</h2></legend>
+
+            <div>
+                <label for="land">Land:</label>
+                <select id="land" name="land">
+                    <option value="">Bitte wählen Sie ein Land</option>
+                    <optgroup label="Europa">
+                        <option value="de">Deutschland</option>
+                        <option value="ch">Schweiz</option>
+                        <option value="at">Österreich</option>
+                        <option value="fr">Frankreich</option>
+                        <option value="uk">Vereinigtes Königreich</option>
+                    </optgroup>
+                    <optgroup label="Nordamerika">
+                        <option value="us">USA</option>
+                        <option value="ca">Kanada</option>
+                        <option value="mx">Mexiko</option>
+                    </optgroup>
+                    <optgroup label="Asien">
+                        <option value="cn">China</option>
+                        <option value="in">Indien</option>
+                        <option value="jp">Japan</option>
+                    </optgroup>
+                    <option value="andere">Andere</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="beruf">Berufliche Situation:</label>
+                <select id="beruf" name="beruf">
+                    <option value="">Bitte wählen Sie</option>
+                    <optgroup label="Erwerbstätig">
+                        <option value="angestellter">Angestellter</option>
+                        <option value="selbststaendig">Selbstständig</option>
+                        <option value="auszubildender">Auszubildender</option>
+                    </optgroup>
+                    <optgroup label="Nicht erwerbstätig">
+                        <option value="student">Student/Schüler</option>
+                        <option value="rentner">Rentner</option>
+                        <option value="arbeitslos">Arbeitslos</option>
+                        <option value="hausfrau_mann">Hausfrau/mann</option>
+                    </optgroup>
+                    <option value="andere_beruf">Andere</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <button type="submit">Daten absenden</button>
+
+        <p>
+            <strong>Hinweis:</strong> Da dieses Formular ohne serverseitigen Code arbeitet, werden die von Ihnen ausgewählten Daten nach dem Absenden in der URL (Adresszeile Ihres Browsers) sichtbar sein.
+        </p>
+    </form>
+</body>
+</html>
