@@ -8,16 +8,14 @@
 </head>
 <body>
     <div class="container">
-        <h1>Modul 293 - Webauftritt erstellen und veröffentlichen test</h1>
+        <h1>Modul 293 - Webauftritt erstellen und veröffentlichen</h1>
         
         <?php
 // Dynamisch alle Verzeichnisse im aktuellen Ordner finden
 $directories = array_filter(glob('*', GLOB_ONLYDIR));
 
-// Dateiendungen, die ausgeschlossen werden sollen
 $excludedExtensions = ['php', 'htaccess', 'json'];
 
-// Funktion für Dateisymbole
 function getFileIcon($filename) {
     $extension = strtolower(pathinfo($filename, PATHINFO_EXTENSION));
     return match ($extension) {
@@ -48,7 +46,6 @@ foreach ($directories as $dir) {
         $isDir = is_dir($filePath);
         $extension = strtolower(pathinfo($filePath, PATHINFO_EXTENSION));
 
-        // Ausschließen bestimmter Dateitypen
         if (!$isDir && in_array($extension, $excludedExtensions)) {
             continue;
         }
